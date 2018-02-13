@@ -1,0 +1,25 @@
+.player-role {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 1em;
+    top: 4px;
+}
+.role-support {
+    background-image: url(../svg/support.svg);
+}
+.role-tank {
+    background-image: url(../svg/tank.svg);
+}
+.role-offense {
+    background-image: url(../svg/offense.svg);
+}
+.role-defense {
+    background-image: url(../svg/defense.svg);
+}
+.role-flex {
+    background-image: url(../svg/flex.svg);
+}

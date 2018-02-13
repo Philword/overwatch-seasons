@@ -1,0 +1,441 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Teko:300,400,500,600,700');
+@font-face {
+font-family: 'BigNoodleTitling';
+font-style: normal;
+font-weight: normal;
+src: url('/fonts/big_noodle_titling.woff') format('woff');
+}
+@font-face {
+font-family: 'BigNoodleTitling Oblique';
+font-style: normal;
+font-weight: normal;
+src: url('/fonts/big_noodle_titling_oblique.woff') format('woff');
+}
+.uk-navbar-nav > li > a {
+    text-transform: uppercase;
+}
+.body-inner {
+    background-image: url(/img/ow-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-color: #f1f1f1;
+}
+.content-margin {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom:60px;
+}
+.uk-background-secondary {
+    border-radius:0.4em;
+    background-image: url(/img/nav-bg.jpg);
+}
+.uk-search-default .uk-search-input {
+    border-left: 2px solid #ff9b00;
+}
+.uk-table th {
+    font-family:'Teko', sans-serif;
+    text-transform: uppercase;
+}
+.bold-text {
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #7f7f7f;
+}
+.uk-table th {
+        color: #ff9b00 !important;
+}
+.uk-navbar-nav > li > a:active {
+    color:#ff9b00 !important;
+}
+.flag-small {
+    width:16px !important;
+}
+.team-logo {
+    height:150px;
+    padding: 12px;
+    max-height: 150px;
+    width: auto;
+}
+.team-page-logo {
+   padding: 1px;
+}
+.zero-magrin {
+    margin-left:0px !important;
+}
+.little-margin {
+    margin-right:5px !important;
+}
+.stream-buttion {
+    padding: 3px 20px 1px 20px;
+    background-color: #fd5757;
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffff;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 0.2rem;
+}
+.stream-buttion:hover {
+    background-color: #ff3e3e;
+}
+.uk-card-body {
+        padding-bottom: 15px !important;
+}
+.roster-button {
+    font-family: 'Teko';
+}
+.player-name {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.9rem;
+    font-style: italic;
+    color: #212121;
+    line-height: 22px;
+}
+.player-full-name {
+    font-style:italic;
+}
+.role-big {
+    width: 26px;
+    height: 26px;
+    top: 0;
+    margin-right: 8px;
+}
+.team-padding {
+    padding-bottom:20px !important;
+}
+.step-number {
+    background-color: #333333;
+    height: 27px;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    width: 27px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 2.0rem;
+    color: #fff;
+    font-family: 'Teko';
+    font-size: 1.2rem;
+}
+.sub-step-number {
+    background-color: #333333;
+    height: 20px;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    width: 20px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: #fff;
+    font-family: 'Teko';
+    font-size: 0.7rem;
+}
+.sub-done {
+    font-family: 'Teko';
+    padding-left: 5px;
+    font-size: 1.1rem;
+}
+.step-text {
+    font-family: 'Teko';
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    padding-left: 10px;
+    font-weight: 300;
+    color: #333;
+}
+.step-active {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sidebar-border {
+    border-right: 1px solid #ff9b00;
+}
+.form-legend {
+    line-height: 1.4rem;
+    font-family: 'Teko', sans-serif;
+    text-transform: capitalize;
+    color: #3f3f49;
+    font-size: 20px;
+    font-weight: 400;
+}
+.uk-input:focus {
+    border-right: 2px solid #ff9b00;
+}
+.form-quize {
+    padding-left: 10px;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #929292;
+ }
+ .muted-bg {
+    background-color: #b5b5b5;
+ }
+ .muted-text {
+    color: #b5b5b5;
+ }
+ .done-icon {
+    background-color: #ff9b00;
+ }
+ .done-text {
+    color: #ff9b00;
+ }
+
+ .uk-button-primary {
+    ont-family: 'Teko';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+ }
+ .img-center {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 300px;
+    height: 300px;
+ }
+
+.promo-header {
+    background-image: url(/img/main-header.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    border-bottom: 5px solid #ff9b00;
+    height: 796px;
+}
+.logo-main-page {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 400px;
+    height: 400px;
+}
+.main-season {
+    font-family: 'BigNoodleTitling';
+    color: #eaeaea;
+    font-size: 4.0rem;
+}
+.call-text {
+    font-family: 'BigNoodleTitling Oblique';
+    color:#545454;
+    line-height: 1.9rem;
+    font-size: 1.8rem;
+}
+.row-bg {
+    background-color: #f5f5f5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.uk-padding-top {
+    padding-top: 80px;
+}
+.row-light {
+    background-color: #f8f8f8;
+}
+.subscribe-block {
+    background-color: #ff9b00;
+}
+.inverse-text {
+    color: #fff !important;
+}
+.map-bg {
+    background-image: url(/svg/map.svg);
+    background-repeat: no-repeat;
+}
+.big-padding {
+    padding-top: 140px !important;
+    padding-bottom:140px !important;
+}
+.medium-padding {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+}
+.tracer-bg {
+    background-image: url(/img/tracer.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+.cup-bg {
+    background-image: url(/svg/prize.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.footer-bottom {
+    background: #2b2b2b;
+    padding-top: 93px;
+    padding-bottom: 30px;
+}
+.footer-icon {
+    font-size: 2.3rem;
+    padding-right: 4px;
+    color: #eaeaea;
+}
+.footer-text {
+    color:#b3b3b3;
+}
+.timer-text {
+        font-family: Teko;
+        font-size: 1.4rem;
+        font-weight: 300;
+}
+.timer {
+    font-family: 'BigNoodleTitling Oblique';
+    line-height: 0.1rem;
+    color: #ff9b00;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 640px) {
+    .tracer-bg {
+        background-image: url('/img/tracer-mobile.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+   .hide-bg {
+        background-image:none;
+   }
+   .mobile-title {
+        font-size: 1.5rem;
+   }
+   .uk-navbar-nav {
+        padding-left: 7px !important;
+   }
+   .uk-navbar-nav > li > a {
+        padding: 4px !important;
+        font-size: 17px !important;
+   }
+   .big-padding {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+   }
+   .logo-main-page {
+        padding: 20px;
+    }
+    .team-logo {
+        padding: 46px;
+    }
+    .uk-logo {
+        width: 164px;
+        margin-left: 85px;
+    }
+    .uk-table th {
+        font-size: 12px !important;
+    }
+    .bold-text {
+        font-size: 0.8rem !important;
+    }
+    .uk-table td {
+        font-size: 0.7rem !important;
+        text-align: center;
+    }
+    .sidebar-border {
+        border-bottom: 1px solid #333333;
+        border-right: 0px;
+        padding-bottom: 25px;
+    }
+    .apply-buttons {
+        width: 100%;
+        margin-top: 10px important;
+    }
+    .promo-header {
+            height: 725px !important;
+    }
+
+
+}
+
+
+
+$global-primary-background:#ff9b00;
+$form-background: #fdfdfd;
+$form-focus-background: #fff;
+$base-h3-line-height:0;
+$navbar-nav-item-active-color: #ff9b00;
+$table-caption-color: red;
+$global-link-color:#3f3f49;
+$global-link-hover-color: #ff9b00;
+$search-placeholder-color: #3a3a3a;
+$search-default-width: 250px;
+$base-heading-font-family: BigNoodleTitling Oblique;
+$navbar-nav-item-color: #fff;
+$navbar-nav-item-font-size: 1.4rem;
+$navbar-nav-item-hover-color: #ff9b00;
+$navbar-nav-item-font-family: Teko;
+$global-font-family: Abel;
+$table-header-cell-font-weight: 400;
+$table-header-cell-color: #3f3f49;
+$table-header-cell-font-size: 20px;
+
+//ALL STYLE IMPORTS///
+// UIkit 3
+
+// Base
+@import 'node_modules/uikit/src/scss/variables.scss';
+@import 'node_modules/uikit/src/scss/mixins.scss';
+@import 'node_modules/uikit/src/scss/components/base.scss';
+@import 'node_modules/uikit/src/scss/components/inverse.scss';
+
+// Elements
+@import 'node_modules/uikit/src/scss/components/link.scss';
+@import 'node_modules/uikit/src/scss/components/heading.scss';
+@import 'node_modules/uikit/src/scss/components/divider.scss';
+@import 'node_modules/uikit/src/scss/components/list.scss';
+@import 'node_modules/uikit/src/scss/components/description-list.scss';
+@import 'node_modules/uikit/src/scss/components/table.scss';
+@import 'node_modules/uikit/src/scss/components/icon.scss';
+@import 'node_modules/uikit/src/scss/components/form.scss'; // After: Icon
+@import 'node_modules/uikit/src/scss/components/button.scss';
+
+// Layout
+@import 'node_modules/uikit/src/scss/components/section.scss';
+@import 'node_modules/uikit/src/scss/components/container.scss';
+@import 'node_modules/uikit/src/scss/components/grid.scss';
+@import 'node_modules/uikit/src/scss/components/tile.scss';
+@import 'node_modules/uikit/src/scss/components/card.scss';
+
+// Common
+@import 'node_modules/uikit/src/scss/components/close.scss'; // After: Icon
+@import 'node_modules/uikit/src/scss/components/spinner.scss'; // After: Icon
+@import 'node_modules/uikit/src/scss/components/totop.scss'; // After: Icon
+@import 'node_modules/uikit/src/scss/components/alert.scss'; // After: Close
+@import 'node_modules/uikit/src/scss/components/badge.scss';
+@import 'node_modules/uikit/src/scss/components/label.scss';
+@import 'node_modules/uikit/src/scss/components/overlay.scss'; // After: Icon
+@import 'node_modules/uikit/src/scss/components/article.scss'; // After: Subnav
+@import 'node_modules/uikit/src/scss/components/comment.scss'; // After: Subnav
+@import 'node_modules/uikit/src/scss/components/search.scss'; // After: Icon
+
+// Navs
+@import 'node_modules/uikit/src/scss/components/nav.scss';
+@import 'node_modules/uikit/src/scss/components/navbar.scss'; // After: Card, Grid, Nav, Icon, Search
+@import 'node_modules/uikit/src/scss/components/subnav.scss';
+@import 'node_modules/uikit/src/scss/components/breadcrumb.scss';
+@import 'node_modules/uikit/src/scss/components/pagination.scss';
+@import 'node_modules/uikit/src/scss/components/tab.scss';
+@import 'node_modules/uikit/src/scss/components/slidenav.scss'; // After: Icon
+@import 'node_modules/uikit/src/scss/components/dotnav.scss';
+
+// JavaScript
+@import 'node_modules/uikit/src/scss/components/accordion.scss';
+@import 'node_modules/uikit/src/scss/components/drop.scss'; // After: Card
+@import 'node_modules/uikit/src/scss/components/dropdown.scss'; // After: Card
+@import 'node_modules/uikit/src/scss/components/modal.scss'; // After: Close
+@import 'node_modules/uikit/src/scss/components/sticky.scss';
+@import 'node_modules/uikit/src/scss/components/offcanvas.scss';
+@import 'node_modules/uikit/src/scss/components/switcher.scss';
+@import 'node_modules/uikit/src/scss/components/notification.scss';
+
+@import 'node_modules/uikit/src/scss/components/_import.utilities.scss';
+
+@mixin hook-search-default-input() {border: 1px solid #615f5f; border-left: 4px solid #ff9b00;}
+
+
+
+
