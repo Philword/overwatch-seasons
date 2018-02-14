@@ -22,10 +22,11 @@
                 @endforeach
             </div>
     </div>
- <div class="uk-grid uk-margin uk-margin-medium-top uk-float-right uk-width-1-1@s">
-            <a href="/application/submited" class="uk-button apply-buttons uk-button-primary uk-float-right uk-margin-small-left">Submit Application</a>
-            <a href="/application/{{$team->name}}/players" class="uk-button uk-button-primary apply-buttons uk-float-right">Add More Players</a>
-          </div>
+  </div>
+        <div class="uk-margin uk-margin-medium-top uk-width-1-1@s">
+            <a href="/application/submited" class="uk-button apply-buttons uk-button-primary uk-width-1-1@s uk-margin-small-bottom">Submit Application</a>
+            <a href="/application/{{$team->name}}/players" class="uk-button apply-buttons uk-button-primary uk-width-1-1@s">Add More Players</a>
+        </div>
         </div>
   </div>
 </div>
