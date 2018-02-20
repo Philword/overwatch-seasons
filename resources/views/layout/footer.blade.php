@@ -1,3 +1,8 @@
+{{-- <div style="background-color: #d6d6d6;" class="partner-block">
+ <div style="" class="uk-container uk-text-center">
+     <h2 style="color: #adadad;margin-bottom: 50px !important;margin-top: 50px !important;" class="uk-margin-large-top uk-margin-large-bottom">Partner section</h2>
+ </div>
+</div> {{-- END OF PARTNER --}}
 <div class="subscribe-block"> {{-- START Subscribe block --}}
     <div class="uk-container">
         <div class="uk-grid uk-flex uk-margin-medium-top uk-margin-medium-bottom">

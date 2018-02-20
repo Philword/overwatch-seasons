@@ -28,6 +28,10 @@ Route::post('/teams', 'TeamController@store');
 Route::get('/application/{team}/players', 'PlayerController@create');
 Route::post('/application/{team}/players', 'PlayerController@store');
 
+Route::get('/rules', function () {
+    return view('pages.rules');
+});
+
 Route::group(['prefix' => 'osadmin'], function () {
     Voyager::routes();
 });
