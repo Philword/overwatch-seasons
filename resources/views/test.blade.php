@@ -1,80 +1,164 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="css/flag-icon.css">
-        <link rel="stylesheet" type="text/css" href="css/flag-icon.min.css">
-        <link rel="stylesheet" type="text/css" href="css/roles-icon.css">
-    </head>
-    <body>
-{{-- SHOW ALL PLAYERS --}}
-        <h1>Players</h1>
-            <div>
-                <div>
-                       @foreach(App\Player::all() as $player)
-                        <ul>
-                            <div><strong>Nick:</strong><a href="https://playoverwatch.com/ru-ru/career/psn/{{ $player->psn }}" target="_blank">{{ $player->nick }}</a></div>
-                            <div><strong>First Name:</strong> {{ $player->firstname }}</div>
-                            <div><strong>Last Name:</strong> {{ $player->lastname }}</div>
-                            <div><strong>Role:</strong> <span class="player-role {{ $player->role->icon }}"></span></div>
-                            <div><strong>Team:</strong> {{ $player->team->name }}</div>
-                            <div><strong>From:</strong> <span class="flag-icon {{ $player->team->country->flag }}"></span></div>
-                            <div>Team Logo: <img style=" width: 60px; height: auto;" src="{{ $player->team->logo }}"></div>
-                    </ul>
-                    <hr>
-                @endforeach
-                </div>
-                <div>
-                    <h1>Teams</h1>
-                    @foreach( $teams as $team)
-                        <ul><span class="flag-icon {{ $team->country->flag}}"></span> {{ $team->name}}
-                            @foreach($team->players as $player)
-                                <ul>
-                                    Player: {{ $player->nick }}  <span class="player-role {{ $player->role->icon}}"></span>
-                                </ul>
-                            @endforeach
-                        </ul>
-                    @endforeach
+<style type="text/css">
+/*
+ *  Flex Layout Specifics
+*/
+main{
+  display:flex;
+  flex-direction:row;
+}
+.round{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:200px;
+  list-style:none;
+  padding:0;
+}
+  .round .spacer{ flex-grow:1; }
+  .round .spacer:first-child,
+  .round .spacer:last-child{ flex-grow:.5; }
 
-                </div>
-                <div>
-                    <!-- Add a placeholder for the Twitch embed -->
-                    <div id="twitch-embed"></div>
+  .round .game-spacer{
+    flex-grow:1;
+  }
 
-                    <!-- Load the Twitch embed script -->
-                    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+/*
+ *  General Styles
+*/
+body{
+  font-family:sans-serif;
+  font-size:small;
+  padding:10px;
+  line-height:1.4em;
+}
 
-                    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-                    <script type="text/javascript">
-                      new Twitch.Embed("twitch-embed", {
-                        width: 854,
-                        height: 480,
-                        layout: "video",
-                        theme: "dark",
-                        channel: "overwatchseasons"
-                      });
-                    </script>
-                </div>
-                <div>
-                    <iframe frameborder="400"
-                            scrolling="yes"
-                            id="overwatchseasons"
-                            src="http://www.twitch.tv/embed/overwatchseasons/chat"
-                            height="400"
-                            width="100%">
-                    </iframe>
-                </div>
-            </div>
+li.game{
+  padding-left:20px;
+}
 
+  li.game.winner{
+    font-weight:bold;
+  }
+  li.game span{
+    float:right;
+    margin-right:5px;
+  }
 
+  li.game-top{ border-bottom:1px solid #aaa; }
 
+  li.game-spacer{
+    border-right:1px solid #aaa;
+    min-height:40px;
+  }
 
-    </body>
-    </html>
+  li.game-bottom{
+    border-top:1px solid #aaa;
+  }
+</style>
+<h1>2013 NCAA Tournament - Midwest Bracket</h1>
+<main id="tournament">
+    <ul class="round round-1">
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Lousville <span>79</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">NC A&T <span>48</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Colo St <span>84</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Missouri <span>72</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top ">Oklahoma St <span>55</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom winner">Oregon <span>68</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Saint Louis <span>64</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">New Mexico St <span>44</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Memphis <span>54</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">St Mary's <span>52</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Mich St <span>65</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Valparaiso <span>54</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Creighton <span>67</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Cincinnati <span>63</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Duke <span>73</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Albany <span>61</span></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-2">
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Lousville <span>82</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Colo St <span>56</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Oregon <span>74</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Saint Louis <span>57</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top ">Memphis <span>48</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom winner">Mich St <span>70</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top ">Creighton <span>50</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom winner">Duke <span>66</span></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-3">
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Lousville <span>77</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Oregon <span>69</span></li>
+
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top ">Mich St <span>61</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom winner">Duke <span>71</span></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+    <ul class="round round-4">
+        <li class="spacer">&nbsp;</li>
+
+        <li class="game game-top winner">Lousville <span>85</span></li>
+        <li class="game game-spacer">&nbsp;</li>
+        <li class="game game-bottom ">Duke <span>63</span></li>
+
+        <li class="spacer">&nbsp;</li>
+    </ul>
+</main>
 

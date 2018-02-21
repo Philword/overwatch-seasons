@@ -21,6 +21,9 @@ Route::get('/application/submited', function () {
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/t', function () {
+    return view('test');
+});
 Route::post('/subscriber', 'SubscriberController@store');
 
 Route::post('/teams', 'TeamController@store');

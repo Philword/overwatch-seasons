@@ -23,7 +23,7 @@
             @foreach( $teams as $team)
                 <div style="padding: 2px;" class="uk-animation-fade">
                     <div class="uk-card  uk-card-default uk-card-body">
-                        <div class="team-logo"><img src="/{{ $team->logo }}"></div>
+                        <div class="team-logo"><img src="{{ Voyager::image($team->logo) }}"></div>
                     <h3>{{ $team->name }}</h3>
                         <span class="flag-icon flag-small {{ $team->country->flag }}"></span> <span>{{ $team->country->name }}</span>
                         <hr>

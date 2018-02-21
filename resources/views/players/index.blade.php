@@ -44,7 +44,7 @@
                             {{ $player->nick }}</a></td>
                         <td>{{ $player->firstname }}</td>
                         <td>{{ $player->lastname }}</td>
-                        <td class="bold-text"><img style=" width: 30px; height: auto;" src="{{ $player->team->logo }}"> {{ $player->team->name }}</td>
+                        <td class="bold-text"><img style=" width: 30px; height: auto;" src="{{ Voyager::image($player->team->logo) }}"> {{ $player->team->name }}</td>
                         <td><span class="player-role {{ $player->role->icon}}"></span> {{ $player->role->name }}</td>
                     </tr>
                     @endif

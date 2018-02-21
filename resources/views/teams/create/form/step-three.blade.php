@@ -1,7 +1,7 @@
 <h2>Application Review</h2>
   <div class="uk-grid zero-magrin uk-width-1-1@s zero-margin uk-margin-large-top uk-animation-fade">
     <div class="uk-width-1-3@s uk-text-center">
-      <img src="/{{ $team->logo }}">
+      <img src="{{ Voyager::image($team->logo) }}">
       <h2>{{$team->name}}</h2>
       <span> <span class="flag-icon flag-small {{ $team->country->flag }}"></span> {{ $team->country->name }}</span>
     </div>

@@ -13,7 +13,7 @@
        <div class="uk-grid uk-card-default zero-magrin uk-child-width-1-1 team-padding">
         @if($team->status == 'PUBLISHED')
             <div class="uk-card  uk-card-default uk-card-body uk-width-1-4@s uk-text-center">
-                <div class="team-page-logo"><img src="/{{ $team->logo }}"></div>
+                <div class="team-page-logo"><img src="{{ Voyager::image($team->logo) }}"></div>
                 <h2>{{ $team->name }}</h2>
                 <span> <span class="flag-icon flag-small {{ $team->country->flag }}"></span> {{ $team->country->name }}</span>
             </div>
