@@ -14,7 +14,7 @@
                 <li><a href="#">Standings</a></li>
                 <li><a href="#">Videos</a></li>
                 <li><a href="#">News</a></li>
-                <li><a href="#">Rules</a></li>
+                <li><a href="{{ url('/rules') }}">Rules</a></li>
             </ul>
 
              <div class="uk-navbar-right">

@@ -17,6 +17,8 @@ class Team extends Model
     {
         return $this->hasMany(Player::class);
     }
+
+
     public function getRouteKeyName()
     {
         return 'name';

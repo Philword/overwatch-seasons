@@ -38,3 +38,8 @@ Route::get('/rules', function () {
 Route::group(['prefix' => 'osadmin'], function () {
     Voyager::routes();
 });
+
+// ======MATCHES======
+
+Route::get('/test', 'MatchController@index');
+Route::get('/test2', 'GroupController@index');

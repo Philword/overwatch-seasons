@@ -15,12 +15,12 @@
                 <div class="call-text mobile-title">The time has come! Assemble your team on PS4 ™ to fight and win in the </div>
                 <div class="call-text mobile-title">Overwatch Seasons International cup!</div>
                 <div class="uk-margin-large-top uk-animation-toggle ">
-
+{{--
                     <span class="timer-text">Registration Starts In</span>
-                    <p class="timer" id="demo"></p>
+                    <p class="timer" id="demo"></p> --}}
 
-                       {{--  <a class="uk-button uk-button-primary uk-animation-shake" href="{{route('application')}}">Register Your Team</a>
-                         <P>*registration will be closed on 20th March</P> --}}
+                        <a class="uk-button uk-button-primary uk-animation-shake" href="{{route('application')}}">Register Your Team</a>
+                         <P>*registration will be closed on 20th March</P>
                 </div>
             </div>
         </div> {{-- END Call to action block --}}

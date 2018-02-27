@@ -9,7 +9,7 @@
         <!-- Close Graph-->
 @endsection
 @section('content')
-<div class="uk-container uk-margin-medium-top">
+<div class="uk-container uk-margin-medium-top uk-animation-fade">
    <h1>Overwatch Seasons Rules</h1>
 
     <h3 class="p1">1. Team requirements:</h3>
