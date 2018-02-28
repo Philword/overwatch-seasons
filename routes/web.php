@@ -42,4 +42,4 @@ Route::group(['prefix' => 'osadmin'], function () {
 // ======MATCHES======
 
 Route::get('/test', 'MatchController@index');
-Route::get('/test2', 'GroupController@index');
+Route::get('/schedule', 'GroupController@index')->name('schedule');

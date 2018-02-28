@@ -1,5 +1,7 @@
 @extends('layout.master')
 @section('seo')
+         <title>The Overwatch Seasons - {{ $team->name }}</title>
+        <meta name="description" content="Overwatch Seasons Participant">
         <!-- Open Graph -->
         <meta property="og:url"                content="http://test3.lol/teams/{{ $team->name }}" />
         <meta property="og:type"               content="website" />

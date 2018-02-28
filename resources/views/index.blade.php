@@ -1,7 +1,9 @@
 @extends('layout.promomaster')
 @section('seo')
+        <title>The Overwatch Seasons</title>
+        <meta name="description" content="The time has come! Assemble your team on PS4 ™ to fight and win in the Overwatch Seasons International cup!">
         <!-- Open Graph -->
-        <meta property="og:url"                content="http://test3.lol/" />
+        <meta property="og:url"                content="https://overwatch-seasons.com/" />
         <meta property="og:type"               content="website" />
         <meta property="og:title"              content="The Overwatch Seasons" />
         <meta property="og:description"        content="The time has come! Assemble your team on PS4 ™ to fight and win in the Overwatch Seasons International cup!" />

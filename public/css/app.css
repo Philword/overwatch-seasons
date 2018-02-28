@@ -347,7 +347,206 @@
   font-size: 1.8rem;
 }
 
-@media only screen and (max-width: 640px) {
+.tablinks {
+  padding: 16px 25px 14px 25px;
+  border: 0px;
+  background: #fdfdfd;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #5a5a5a;
+  cursor: pointer;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button:focus {
+  outline: none !important;
+}
+
+.active {
+  border-bottom: 2px solid #ff9b00;
+}
+
+.match-row {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid rgba(183, 183, 183, 0.2);
+  padding: 20px;
+}
+
+.match-row-header {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: #333333;
+  color: #f1f1f1;
+  padding: 4px;
+}
+
+.match-date {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+}
+
+.wight-500 {
+  font-weight: 500;
+}
+
+.group-name {
+  color: #343434;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: 'BigNoodleTitling';
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.team-label {
+  font-size: 1rem;
+  line-height: 1;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.team-label-reverse {
+  font-size: 1rem;
+  line-height: 1;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.match-row-status {
+  width: 20%;
+}
+
+.match-status {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  min-width: 60px;
+  padding: 13px 12px 10px 12px;
+  margin: 0 8px;
+  font-size: 17px;
+  font-family: 'Teko';
+  background-color: rgba(51, 51, 51, 0.06);
+  line-height: 1;
+  border-radius: 2px;
+}
+
+.team-label-name {
+  font-family: 'BigNoodleTitling Oblique';
+  font-size: 1.3rem;
+  color: #343434;
+}
+
+.match-row:hover {
+  color: #343434;
+  text-decoration: none;
+}
+
+.match-row-details {
+  max-width: 120px;
+  margin-right: 0;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.match-button {
+  display: none;
+  padding: 0 8px;
+  margin-right: 19px;
+  border-color: transparent;
+  height: 32px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: right;
+  font-size: 14px;
+}
+
+.match-row-details:hover .uk-button {
+  visibility: visible !important;
+}
+
+@media only screen and (max-width: 360px) {
+  .uk-logo {
+    width: 164px;
+    margin-left: 67px;
+  }
+
+  .uk-navbar-nav > li > a {
+    padding: 5px !important;
+    font-size: 13px !important;
+    padding-top: 24px !important;
+  }
+
+  .match-row-status {
+    width: 25%;
+  }
+
+  .match-status {
+    min-width: 44px;
+    padding: 9px 8px;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .tablinks {
+    width: 100%;
+  }
+
+  .match-row-details {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .match-row-details {
+    display: none;
+  }
+
   .tracer-bg {
     background-image: url("/img/tracer-mobile.png");
     background-repeat: no-repeat;
@@ -415,6 +614,21 @@
 
   .promo-header {
     height: 725px !important;
+  }
+
+  .match-row-status {
+    width: 30%;
+  }
+
+  .match-status {
+    min-width: 44px;
+    padding: 9px 8px;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .tablinks {
+    width: 100%;
   }
 }
 

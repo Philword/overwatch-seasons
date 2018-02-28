@@ -1,5 +1,7 @@
 @extends('layout.master')
 @section('seo')
+        <title>The Overwatch Seasons - Rules</title>
+        <meta name="description" content="Overwatch Seasons official rules.">
         <!-- Open Graph -->
         <meta property="og:url"                content="https://overwatch-seasons.com/rules" />
         <meta property="og:type"               content="website" />

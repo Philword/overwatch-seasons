@@ -8,9 +8,9 @@
             </div>
             <ul class="uk-navbar-nav">
                 <li><a href="{{ url('/teams')}}">Teams</a></li>
-                <li>
-                    <a href="{{ url('/players') }}">Players</a></li>
-                <li><a href="#">Schedule</a></li>
+                <li class="uk-parent">
+                <a href="{{ url('/players') }}">Players</a></li>
+                <li><a href="{{ route('schedule') }}">Schedule</a></li>
                 <li><a href="#">Standings</a></li>
                 <li><a href="#">Videos</a></li>
                 <li><a href="#">News</a></li>
@@ -23,6 +23,20 @@
             </div>
             </div>
         </div>
+        <script type="text/javascript">
+            $(function(){
+                // this will get the full URL at the address bar
+                var url = window.location.href;
+
+                // passes on every "a" tag
+                $(".uk-navbar-nav > li > a").each(function() {
+                        // checks if its the same on the address bar
+                    if(url == (this.href)) {
+                        $(this).closest("li").addClass("uk-active");
+                    }
+                });
+            });
+        </script>
     </nav>
 
 

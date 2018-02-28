@@ -9,7 +9,7 @@ class GroupController extends Controller
 {
     public function index()
     {
-        $groups = Group::latest()->get();
-        return view('test2', compact('groups'));
+        $groups = Group::orderBy('name', 'asc')->get();
+        return view('matches.schedule', compact('groups'));
     }
 }

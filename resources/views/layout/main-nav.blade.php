@@ -4,7 +4,7 @@
             <ul class="uk-navbar-nav">
                 <li><a  href="{{ url('/teams')}}">Teams</a></li>
                 <li><a href="{{ url('/players') }}">Players</a></li>
-                <li><a href="#">Schedule</a></li>
+                <li><a href="{{ route('schedule') }}">Schedule</a></li>
                 <li><a href="#">Standings</a></li>
                 <li><a href="#">Videos</a></li>
                 <li><a href="#">News</a></li>

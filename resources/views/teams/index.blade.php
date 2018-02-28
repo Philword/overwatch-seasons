@@ -1,5 +1,7 @@
 @extends('layout.master')
 @section('seo')
+        <title>The Overwatch Seasons - Teams</title>
+        <meta name="description" content="Overwatch Seasons official teams list.">
         <!-- Open Graph -->
         <meta property="og:url"                content="http://test3.lol/teams" />
         <meta property="og:type"               content="website" />

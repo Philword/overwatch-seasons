@@ -1,5 +1,7 @@
 @extends('layout.master')
 @section('seo')
+        <title>The Overwatch Seasons - Players</title>
+        <meta name="description" content="Overwatch Seasons official players list.">
         <!-- Open Graph -->
         <meta property="og:url"                content="http://test3.lol/players" />
         <meta property="og:type"               content="website" />
