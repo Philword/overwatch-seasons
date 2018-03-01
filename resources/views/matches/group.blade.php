@@ -18,7 +18,11 @@
                      @if ( $match->status == 'LIVE')
                       Live Now
                       @elseif( $match->status == 'COMPLETED')
-                        {{ $match->score_left }} - {{ $match->score_right }}
+                        @if($match->score_left > $match->score_right)
+                        <span class="match-status-winner ">{{ $match->score_left }}</span>&nbsp; - &nbsp;<span>{{ $match->score_right }}</span>
+                        @else
+                         <span>{{ $match->score_left }}</span>&nbsp; - &nbsp;<span class="match-status-winner">{{ $match->score_right }}</span>
+                        @endif
                       @else
                         {{ date('g:i A', strtotime($match->date)) }}
                      @endif

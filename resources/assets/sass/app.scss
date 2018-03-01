@@ -429,6 +429,10 @@ src: url('/fonts/big_noodle_titling_oblique.woff') format('woff');
 .match-row-details:hover .uk-button {
     visibility:visible !important;
 }
+.match-status-winner {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
 @media only screen and (max-width: 360px) {
     .uk-logo {
         width: 164px;
