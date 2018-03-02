@@ -433,6 +433,12 @@ src: url('/fonts/big_noodle_titling_oblique.woff') format('woff');
     font-weight: 500;
     font-size: 1.2rem;
 }
+.muted-nav {
+    color: #808080;
+}
+.muted-nav:hover {
+    color: #808080;
+}
 @media only screen and (max-width: 360px) {
     .uk-logo {
         width: 164px;
