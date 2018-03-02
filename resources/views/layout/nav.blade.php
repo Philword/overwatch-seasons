@@ -7,10 +7,10 @@
                 </a>
             </div>
             <ul class="uk-navbar-nav">
-                <li><a href="{{ url('/teams')}}">Teams</a></li>
+                <li><a href="#">Teams</a></li>
                 <li class="uk-parent">
-                <a href="{{ url('/players') }}">Players</a></li>
-                <li><a href="{{ route('schedule') }}">Schedule</a></li>
+                <a href="#">Players</a></li>
+                <li><a href="#">Schedule</a></li>
                 <li><a href="#">Standings</a></li>
                 <li><a href="#">Videos</a></li>
                 <li><a href="#">News</a></li>
