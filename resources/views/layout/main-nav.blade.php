@@ -6,9 +6,9 @@
                 <li ><a class="muted-nav" href="#">Players</a></li>
                 <li ><a class="muted-nav" href="#">Schedule</a></li>
                 <li ><a class="muted-nav" href="#">Standings</a></li>
-                <li ><a href="#">Videos</a></li>
+                <li ><a class="muted-nav" href="#">Videos</a></li>
                 <li ><a class="muted-nav" href="#">News</a></li>
-                <li ><a class="muted-nav" href="{{ url('/rules')}}">Rules</a></li>
+                <li ><a  href="{{ url('/rules')}}">Rules</a></li>
             </ul>
             </div>
         </div>
