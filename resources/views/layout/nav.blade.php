@@ -7,13 +7,13 @@
                 </a>
             </div>
             <ul class="uk-navbar-nav">
-                <li ><a a class="muted-nav" href="#">Teams</a></li>
-                <li class="uk-parent">
-                <a href="#">Players</a></li>
-                <li ><a a class="muted-nav" href="#">Schedule</a></li>
-                <li ><a a class="muted-nav" href="#">Standings</a></li>
-                <li ><a a class="muted-nav" href="#">Videos</a></li>
-                <li ><a a class="muted-nav" href="#">News</a></li>
+                <li ><a class="muted-nav" href="#">Teams</a></li>
+                <li >
+                <a class="muted-nav" href="#">Players</a></li>
+                <li ><a class="muted-nav" href="#">Schedule</a></li>
+                <li ><a class="muted-nav" href="#">Standings</a></li>
+                <li ><a class="muted-nav" href="#">Videos</a></li>
+                <li ><a class="muted-nav" href="#">News</a></li>
                 <li ><a  href="{{ url('/rules') }}">Rules</a></li>
             </ul>
 
