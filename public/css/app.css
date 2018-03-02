@@ -516,11 +516,15 @@
 }
 
 .muted-nav {
-  color: #808080;
+  color: #808080 !important;
 }
 
 .muted-nav:hover {
-  color: #808080;
+  color: #808080 !important;
+}
+
+.sux {
+  color: red;
 }
 
 @media only screen and (max-width: 360px) {

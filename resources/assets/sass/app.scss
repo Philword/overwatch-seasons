@@ -439,6 +439,9 @@ src: url('/fonts/big_noodle_titling_oblique.woff') format('woff');
 .muted-nav:hover {
     color: #808080 !important;
 }
+.sux {
+    color:red;
+}
 @media only screen and (max-width: 360px) {
     .uk-logo {
         width: 164px;
