@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/players', 'PlayerController@index');
-Route::get('/teams', 'TeamController@index')->name('teams');
-Route::get('/teams/{team}', 'TeamController@show');
+// Route::get('/players', 'PlayerController@index');
+// Route::get('/teams', 'TeamController@index')->name('teams');
+// Route::get('/teams/{team}', 'TeamController@show');
 Route::get('/application', 'TeamController@create')->name('application');
 Route::get('/application/submited', function () {
     return view('teams.create.final');
@@ -21,9 +21,9 @@ Route::get('/application/submited', function () {
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/t', function () {
-    return view('test');
-});
+// Route::get('/t', function () {
+//     return view('test');
+// });
 Route::post('/subscriber', 'SubscriberController@store');
 
 Route::post('/teams', 'TeamController@store');
@@ -41,5 +41,5 @@ Route::group(['prefix' => 'osadmin'], function () {
 
 // ======MATCHES======
 
-Route::get('/test', 'MatchController@index');
-Route::get('/schedule', 'GroupController@index')->name('schedule');
+// Route::get('/test', 'MatchController@index');
+// Route::get('/schedule', 'GroupController@index')->name('schedule');
