@@ -405,7 +405,7 @@
 }
 
 .wight-500 {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .group-name {
@@ -511,7 +511,7 @@
 }
 
 .match-status-winner {
-  font-weight: 500;
+  font-weight: 500 !important;
   font-size: 1.2rem;
 }
 
@@ -525,6 +525,126 @@
 
 .sux {
   color: red;
+}
+
+.match-team-logo {
+  max-height: 123px;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.match-details-center {
+  padding: 38px 0;
+  text-align: center;
+}
+
+.aspect {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.match-details-team-name {
+  font-family: 'Teko', sans-serif;
+  font-size: 2.3rem;
+  line-height: 2.2rem;
+  color: #333333;
+}
+
+.match-details-team-name:hover {
+  color: #333 !important;
+}
+
+.single-match-details {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #f8f8f8;
+}
+
+.single-match-group {
+  background: #333333;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.match-details-score {
+  background: #333333;
+  color: #fff;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.single-match-score {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+}
+
+.maps-info-map-name {
+  color: #f8f8f8;
+  font-family: 'Teko';
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.8rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.map-info-team-logo {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.map-info-team-name {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.3rem;
+  color: #333333;
+}
+
+.map-info-team-score {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.category-name {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.2rem;
+  color: #ff9b00d6;
+  text-transform: uppercase;
+}
+
+.post-date {
+  padding-left: 10px;
+  font-size: 0.9rem;
+  color: #afafaf;
+  margin-top: 2px;
+}
+
+.video-name {
+  font-family: 'Teko';
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 820px) {
+  .uk-navbar-nav {
+    margin-top: 20px !important;
+  }
+
+  .none-display {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -560,12 +680,53 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .mobile-grid {
+    display: grid !important;
+  }
+
+  .team-label-name {
+    font-size: 0.8rem;
+  }
+
+  .uk-navbar-nav {
+    margin-top: 0px !important;
+  }
+
+  .none-display {
+    display: none !important;
+  }
+
+  .maps-info-map-name {
+    font-size: 1.1rem;
+  }
+
   .match-row-details {
     display: none;
   }
 
+  .match-details-center {
+    padding: 22px 0;
+    text-align: center;
+  }
+
+  .match-details-score {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .single-match-details {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .tracer-bg {
-    background-image: url("/img/tracer-mobile.png");
+    background-image: none;
     background-repeat: no-repeat;
     background-position: bottom right;
   }
@@ -601,8 +762,7 @@
   }
 
   .uk-logo {
-    width: 164px;
-    margin-left: 85px;
+    width: 150px;
   }
 
   .uk-table th {
@@ -646,6 +806,10 @@
 
   .tablinks {
     width: 100%;
+  }
+
+  .match-details-team-name {
+    display: none;
   }
 }
 

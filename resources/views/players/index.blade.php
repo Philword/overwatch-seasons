@@ -3,7 +3,7 @@
         <title>The Overwatch Seasons - Players</title>
         <meta name="description" content="Overwatch Seasons official players list.">
         <!-- Open Graph -->
-        <meta property="og:url"                content="http://test3.lol/players" />
+        <meta property="og:url"                content="http://overwatch-seasons.com/players" />
         <meta property="og:type"               content="website" />
         <meta property="og:title"              content="The Overwatch Seasons - Players" />
         <meta property="og:description"        content="Participating players" />

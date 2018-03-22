@@ -11,19 +11,22 @@
         <!-- Close Graph-->
 @endsection
 @section('content')
-    <div class="uk-container tracer-bg">
-        <div class="uk-flex uk-grid uk-margin-xlarge-top uk-margin-large-bottom"> {{-- Call to action block --}}
-            <div class="uk-width-2-3@s uk-text-center uk-margin-large-top ">
-                <div class="call-text mobile-title">The time has come! Assemble your team on PS4 ™ to fight and win in the </div>
-                <div class="call-text mobile-title">Overwatch Seasons International cup!</div>
+    <div class="uk-container">
+        <div class="uk-margin-medium-top uk-flex"> {{-- Call to action block --}}
+            <div class="uk-width-3-5@s uk-text-center uk-flex uk-flex-middle uk-margin-medium-top">
+                <div>
+                    <div class="call-text mobile-title">​​​16 Strongest Teams Of Masters And Grandmasters on PS4 Will Compete For The Ultimate Goal Of Being The Overwatch Season​s​ Best Team!​</div>
                 <div class="uk-margin-large-top uk-animation-toggle ">
-{{--
-                    <span class="timer-text">Registration Starts In</span>
-                    <p class="timer" id="demo"></p> --}}
 
-                        <a class="uk-button uk-button-primary uk-animation-shake" href="{{route('application')}}">Register Your Team</a>
-                         <P>*registration will be closed on 20th March</P>
+                         {{-- Registration + view teams --}}
+                         <a class="uk-button uk-button-primary uk-animation-shake"
+                          href="{{route('teams')}}">View Teams</a>
+                          <p>*Full matches schedule will be avialiable soon. </p>
                 </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@s none-display uk-padding-small">
+                <img src="/img/tracer.png">
             </div>
         </div> {{-- END Call to action block --}}
     </div>
@@ -54,5 +57,4 @@
              </div>
         </div>
     </div>
-<script type="text/javascript" src="/js/timer.js"></script>
 @stop

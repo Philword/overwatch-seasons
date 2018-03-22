@@ -30,4 +30,8 @@ class Match extends Model
     {
         return $this->hasMany(MapMatch::class);
     }
+    public function getRouteKeyName()
+    {
+        return 'id';
+    }
 }

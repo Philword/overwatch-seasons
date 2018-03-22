@@ -11,35 +11,38 @@
 |
 */
 
-// Route::get('/players', 'PlayerController@index');
-// Route::get('/teams', 'TeamController@index')->name('teams');
-// Route::get('/teams/{team}', 'TeamController@show');
-Route::get('/application', 'TeamController@create')->name('application');
-Route::get('/application/submited', function () {
-    return view('teams.create.final');
-});
 Route::get('/', function () {
     return view('index');
 });
-// Route::get('/t', function () {
-//     return view('test');
-// });
-Route::post('/subscriber', 'SubscriberController@store');
-
-Route::post('/teams', 'TeamController@store');
-
-Route::get('/application/{team}/players', 'PlayerController@create');
-Route::post('/application/{team}/players', 'PlayerController@store');
-
+Route::get('/players', 'PlayerController@index');
+Route::get('/teams', 'TeamController@index')->name('teams');
+Route::get('/teams/{team}', 'TeamController@show');
 Route::get('/rules', function () {
     return view('pages.rules');
 });
-
+// ========ADMIN=======
 Route::group(['prefix' => 'osadmin'], function () {
     Voyager::routes();
 });
-
 // ======MATCHES======
-
-// Route::get('/test', 'MatchController@index');
 // Route::get('/schedule', 'GroupController@index')->name('schedule');
+// Route::get('/match/{match}', 'MatchController@show');
+
+// ====POSTS====
+// Route::get('/news', 'PostController@index')->name('news');
+// Route::get('/news/{post}', 'PostController@show');
+
+// ======SUBSCRIBER======
+Route::post('/subscriber', 'SubscriberController@store');
+
+// =====Video======
+// Route::get('/videos', 'VideoController@index')->name('videos');
+
+// =======REGISTRATION=========
+// Route::post('/teams', 'TeamController@store');
+// Route::get('/application', 'TeamController@create')->name('application');
+// Route::get('/application/{team}/players', 'PlayerController@create');
+// Route::post('/application/{team}/players', 'PlayerController@store');
+// Route::get('/application/submited', function () {
+//     return view('teams.create.final');
+// });

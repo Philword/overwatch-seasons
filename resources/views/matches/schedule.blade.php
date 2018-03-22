@@ -14,7 +14,7 @@
                     <!-- Tab links -->
                     <div class="uk-flex-right tab" >
                       <button class="tablinks" onclick="openCity(event, 'Group stage')" id="defaultOpen">Group stage</button>
-                      <button class="tablinks" onclick="openCity(event, 'Playoff')">Final stage</button>
+                      <button class="tablinks" {{-- onclick="openCity(event, 'Playoff') --}}">Final stage</button>
                     </div>
                 </div>
             </div>

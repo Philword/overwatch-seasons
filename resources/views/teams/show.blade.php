@@ -3,7 +3,7 @@
          <title>The Overwatch Seasons - {{ $team->name }}</title>
         <meta name="description" content="Overwatch Seasons Participant">
         <!-- Open Graph -->
-        <meta property="og:url"                content="http://test3.lol/teams/{{ $team->name }}" />
+        <meta property="og:url"                content="http://overwatch-seasons.com/teams/{{ $team->name }}" />
         <meta property="og:type"               content="website" />
         <meta property="og:title"              content="The Overwatch Seasons - Teams" />
         <meta property="og:description"        content="Participant: {{ $team->name }}" />
@@ -42,3 +42,6 @@
        <span class="k-card  uk-card-default uk-card-body uk-width-1-1 uk-text-center uk-margin-xlarge-top uk-margin-xlarge-bottom">This team is still in pending status</span>
     @endif
 @endsection
+
+
+

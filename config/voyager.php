@@ -169,6 +169,9 @@ return [
             'App\\Widgets\\Players',
             'App\\Widgets\\Teams',
             'App\\Widgets\\Matches',
+            'App\\Widgets\\Subscribers',
+            'App\\Widgets\\Posts',
+            'App\\Widgets\\Videos',
         ],
 
     ],

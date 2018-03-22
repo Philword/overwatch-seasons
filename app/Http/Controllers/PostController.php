@@ -7,9 +7,14 @@ use App\Post;
 
 class PostController extends Controller
 {
-    public function index(Post $post)
+    public function index()
     {
-        $posts = Post::all();
-        return view('posts.show', compact('posts'));
+        $posts = Post::where('status', 'published')->latest()->paginate(10);
+        return view('posts.index', compact('posts'));
+    }
+
+    public function show(Post $post)
+    {
+        return view('posts.show', compact('post'));
     }
 }

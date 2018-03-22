@@ -8,7 +8,7 @@
             {{ date('F jS ', strtotime($group->date)) }}</span>
         </div>
         @foreach($group->matches->sortBy('date') as $match)
-        <a href="#" class="match-row uk-text-center">
+        <a href="/match/{{ $match->id }}" class="match-row uk-text-center">
            <div class="uk-width-1-3 uk-flex team-label-reverse">
                 <img style=" width: 40px; height: 100%;" src="{{Voyager::image($match->leftTeam->logo)}}">
                 <div class="team-label-name uk-margin-small-right">{{$match->leftTeam->name}}</div>
