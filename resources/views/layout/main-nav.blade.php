@@ -5,11 +5,11 @@
             <ul class="uk-navbar-nav">
                 <li ><a href="{{ route('teams') }}">Teams</a></li>
                 <li><a href="{{ url('/players') }}">Players</a></li>
-                <li ><a class="muted-nav" href="#">Schedule</a></li>
-                <li ><a class="muted-nav" href="#">Standings</a></li>
-                <li ><a class="muted-nav" href="#">Videos</a></li>
-                <li ><a class="muted-nav" href="">News</a></li>
-                <li ><a  href="{{ url('/rules') }}">Rules</a></li>
+                <li><a href="{{ route('schedule') }}">Schedule</a></li>
+                <li><a href="{{ route('standings') }}">Standings</a></li>
+                <li><a class="muted-nav" href="#">Videos</a></li>
+                <li><a href="{{ url('/news')}}">News</a></li>
+                <li><a  href="{{ url('/rules') }}">Rules</a></li>
             </ul>
                 {{-- Developer menu --}}
                {{--  <ul class="uk-navbar-nav">

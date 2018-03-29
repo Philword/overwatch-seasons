@@ -25,8 +25,11 @@ Route::group(['prefix' => 'osadmin'], function () {
     Voyager::routes();
 });
 // ======MATCHES======
-// Route::get('/schedule', 'GroupController@index')->name('schedule');
-// Route::get('/match/{match}', 'MatchController@show');
+Route::get('/schedule', 'GroupController@index')->name('schedule');
+Route::get('/match/{match}', 'MatchController@show');
+
+// =======STANDINGS=======
+Route::get('/standings', 'PageController@index')->name('standings');
 
 // ====POSTS====
 // Route::get('/news', 'PostController@index')->name('news');

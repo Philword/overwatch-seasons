@@ -1,4 +1,4 @@
-<p>All times are in your local time</p>
+<p>All times are in Los Angeles, California local time. (UTC/GMT -8 hours)</p>
 @foreach($groups as $group)
 <div class="uk-margin-medium-bottom">
     @if($group->stage_name == 'FINAL')
