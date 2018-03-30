@@ -27,13 +27,14 @@ Route::group(['prefix' => 'osadmin'], function () {
 // ======MATCHES======
 Route::get('/schedule', 'GroupController@index')->name('schedule');
 Route::get('/match/{match}', 'MatchController@show');
+// Route::get('/live', 'MatchController@liveMatch');
 
 // =======STANDINGS=======
 Route::get('/standings', 'PageController@index')->name('standings');
 
 // ====POSTS====
-// Route::get('/news', 'PostController@index')->name('news');
-// Route::get('/news/{post}', 'PostController@show');
+Route::get('/news', 'PostController@index')->name('news');
+Route::get('/news/{post}', 'PostController@show');
 
 // ======SUBSCRIBER======
 Route::post('/subscriber', 'SubscriberController@store');

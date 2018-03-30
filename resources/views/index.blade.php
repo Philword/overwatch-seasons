@@ -51,7 +51,7 @@
                         <div class="call-text mobile-title">Prize info</div>
                         <p>As for the first time Overwatch Seasons didn’t find any commercial support, so we decided to collect donations for the amazing show that our teams and broadcasters are going to perform. All donated money will be shared between winners.</p>
                         <a class="uk-button uk-button-primary uk-animation-shake"
-                          href="https://www.paypal.com/pools/c/82VCXPP2Ad" target="_blank"><img style="width: 23px; height: 23px" src="/svg/coins.svg"> Make a Donation</a>
+                          href="https://streamlabs.com/overwatchseasons" target="_blank"><img style="width: 23px; height: 23px" src="/svg/coins.svg"> Make a Donation</a>
                           <div class="uk-margin-large-top">
                                 <p><span class="placement">1st Place:</span> 50% of donated money + Overwatch Seasons Legendary Loot Box</p>
                                 <p><span class="placement">2nd Place:</span> 30% of donated money + Overwatch Seasons Epic Loot Box</p>

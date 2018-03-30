@@ -541,6 +541,46 @@ src: url('/fonts/big_noodle_titling_oblique.woff') format('woff');
     font-size: 1.1rem;
     text-transform:uppercase;
 }
+.live-text {
+    font-family: 'Teko';
+    font-size: 1.2rem;
+    color: #222;
+}
+.live-score {
+    background: #e8e8e8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 4px;
+    border-radius: 3px;
+}
+.live-map-info {
+    color: #f8f8f8;
+    font-family: 'Teko';
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.8rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.live-dot {
+    font-size: 12px;
+    padding-right: 3px;
+    padding-bottom: 4px;
+}
+.live-donate-button {
+    background-color: white;
+    color: #ff9b00;
+    border: 2px solid #fff;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Teko';
+    font-size: 19px;
+    font-style: italic;
+    border-radius: 2px;
+}
 
 // ======================================
 // ===============MOBILE VIEW============
@@ -554,7 +594,7 @@ src: url('/fonts/big_noodle_titling_oblique.woff') format('woff');
     }
     .uk-navbar-nav > li > a {
         padding: 5px !important;
-        font-size: 13px !important;
+        font-size: 12px !important;
         padding-top: 24px !important;
     }
     .match-row-status {
@@ -636,7 +676,7 @@ src: url('/fonts/big_noodle_titling_oblique.woff') format('woff');
    }
    .uk-navbar-nav > li > a {
         padding: 4px !important;
-        font-size: 17px !important;
+        font-size: 12px !important;
    }
    .big-padding {
         padding-top: 80px !important;

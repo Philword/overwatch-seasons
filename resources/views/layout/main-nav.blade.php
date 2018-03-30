@@ -7,9 +7,11 @@
                 <li><a href="{{ url('/players') }}">Players</a></li>
                 <li><a href="{{ route('schedule') }}">Schedule</a></li>
                 <li><a href="{{ route('standings') }}">Standings</a></li>
-                <li><a class="muted-nav" href="#">Videos</a></li>
+                {{-- <li><a class="muted-nav" href="#">Videos</a></li> --}}
                 <li><a href="{{ url('/news')}}">News</a></li>
                 <li><a  href="{{ url('/rules') }}">Rules</a></li>
+                {{-- <li><a style="color: #d84242;" href="{{ url('/live')}}"><i class="fas fa-circle live-dot"></i> Live Now</a></li> --}}
+                <li><a class="muted-nav" href="#"><i class="fas fa-circle live-dot"></i> Offline</a></li>
             </ul>
                 {{-- Developer menu --}}
                {{--  <ul class="uk-navbar-nav">

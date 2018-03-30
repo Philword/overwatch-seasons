@@ -11,4 +11,10 @@ class MatchController extends Controller
     {
         return view('matches.show', compact('match'));
     }
+
+    public function liveMatch()
+    {
+        $matches = Match::where('status', 'live')->get();
+        return view('matches.live', compact('matches'));
+    }
 }
